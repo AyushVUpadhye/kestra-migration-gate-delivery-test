@@ -2,6 +2,6 @@ id: echo_to_log
 namespace: company.demo
 tasks:
   - id: echo
-    type: io.kestra.plugin.core.debug.Echo
+    type: io.kestra.plugin.core.log.Log
     level: WARN
-    format: "Hello from {{ flow.namespace }}"
+    message: "Hello from {{ flow.namespace }}"
