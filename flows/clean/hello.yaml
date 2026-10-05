@@ -1,0 +1,6 @@
+id: hello
+namespace: company.demo
+tasks:
+  - id: hello
+    type: io.kestra.plugin.core.log.Log
+    message: Already Kestra 2.0 compatible

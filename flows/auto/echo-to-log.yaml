@@ -1,0 +1,7 @@
+id: echo_to_log
+namespace: company.demo
+tasks:
+  - id: echo
+    type: io.kestra.plugin.core.debug.Echo
+    level: WARN
+    format: "Hello from {{ flow.namespace }}"
